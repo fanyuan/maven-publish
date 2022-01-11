@@ -4,6 +4,12 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        maven {
+            //allowInsecureProtocol = true
+            allowInsecureProtocol(true)
+
+            url 'http://localhost:8082/repository/repos0/'//html to see 'http://localhost:8082/service/rest/repository/browse/repos0/'
+        }
     }
 }
 rootProject.name = "MavenDemo"
